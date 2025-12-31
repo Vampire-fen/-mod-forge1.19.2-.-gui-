@@ -1,2 +1,8 @@
 # -mod-forge1.19.2-.-gui-
-第一次写mod代码,对很多东西并不是很熟悉,不明白这gui为何一直打不开,按教程感觉该写的也都写了()
+第一次写mod代码(甚至是为此从零学的计算机),对很多东西并不是很熟悉,不明白这gui为何一直打不开,按教程感觉该写的也都写了
+(AbstractContainerMenu,方块,方块实体和他们的注册,在FMLClientSetupEvent的AbstractContainerScreen和Screen和它的menu的绑定).
+不知道为什么对着写好的方块右键就是打不开gui终端也看见了
+通过System.out.println发现MenuScreens.register和Block类的use方法的NetworkHooks.openScreen也执行了.但AbstractContainerScreen的构造方法都没执行
+自己问AI和看教程也一直没找出问题.
+
+求大佬指点
